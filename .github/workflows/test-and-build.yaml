@@ -19,6 +19,7 @@ jobs:
         run: npm test
 
   build:
+    needs: test #Sequential where this step won't run if test fails 
     runs-on: ubuntu-latest
     steps:
       - name: getting my code first
