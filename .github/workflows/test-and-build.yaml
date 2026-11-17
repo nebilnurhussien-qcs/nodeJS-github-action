@@ -8,7 +8,7 @@ on:
   push:
     branches: main #Trigger event only when there a commit on main branch
     paths:
-      - 'App.js' #Trigger commit when the commit is on the file path listed
+      - '**/*.js' #Trigger commit when the commit is on the file path listed
 jobs:
   test:
     runs-on: ubuntu-latest
