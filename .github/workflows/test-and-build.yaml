@@ -9,6 +9,7 @@ on:
     branches: main #Trigger event only when there a commit on main branch
     paths:
       - '**/*.js' #Trigger commit when the commit is on the file path listed
+      #The file path lists any files that contains .js file extension
 jobs:
   test:
     runs-on: ubuntu-latest
